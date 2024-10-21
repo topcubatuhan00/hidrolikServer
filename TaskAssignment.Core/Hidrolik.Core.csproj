@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Jwt - Copy\**" />
+    <EmbeddedResource Remove="Jwt - Copy\**" />
+    <None Remove="Jwt - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskAssignmentServer.Domain\Hidrolik.Domain.csproj" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.21.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
+  </ItemGroup>
+
+</Project>
